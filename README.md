@@ -1,16 +1,48 @@
-# React + Vite
+# 📦 Bold Product Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Ultima Modificación: 01/10/2025 00:03:43**
 
-Currently, two official plugins are available:
+Este proyecto es un **gestor de productos** hecho con **React + Vite + Tailwind CSS**.  
+Se conecta a un **backend con NodeJS** (usando Axios) para manejar las siguientes operaciones:  
+- Ver productos
+- Agregar productos  
+- Eliminar productos  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Características principales
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Lista todos los productos disponibles desde el backend  
+- Filtrado por categoría (ejemplo: Comida, Ropa, Electrónica, etc.)  
+- Modal para agregar un producto con validaciones en tiempo real  
+- Eliminación rápida de productos  
+- Mensajes de éxito y error con `react-hot-toast`  
+- Interfaz estética con Tailwind y soporte para modo oscuro  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologías utilizadas
+
+- **Frontend**: React + Vite  
+- **Estilos**: Tailwind CSS  
+- **Notificaciones**: react-hot-toast  
+- **HTTP Cliente**: Axios  
+- **Backend**: NodeJS (Render Hosting)  
+
+---
+
+## 📂 Estructura del proyecto (Actual)
+
+```bash
+src/
+├── components/       # Navbar, Footer, etc.
+├── pages/productos   # Pagina de Producto (ProductPage)
+├── services/         # api.js (conexión con API backend)
+├── shared/           # hooks y validadores
+│   ├── hooks/        # useProducts
+│   └── validators/   # validaciones de formularios
+├── App.jsx           # Llamado a todas las rutas
+├── index.css         # Estilos para mi index
+├── main.jsx          # Pagina Principal
+├── routes.jsx        # Pagina donde almacenamos rutas
+

@@ -10,6 +10,7 @@ import { Toaster } from "react-hot-toast";
 import { ProductPage } from './pages/productos';
 
 
+// Funcion para manejar las rutas
 function AppRoutes(){
 
     const routes = useRoutes([
@@ -20,6 +21,7 @@ function AppRoutes(){
 
 }
 
+// Componente App que envuelve las rutas y el toaster
 function App(){
     return (
         <Router>
