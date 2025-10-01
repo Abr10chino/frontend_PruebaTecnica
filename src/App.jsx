@@ -1,10 +1,31 @@
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    useRoutes
+} from 'react-router-dom';
+
+import { Toaster } from "react-hot-toast";
+
+import { ProductPage } from './pages/productos';
+
+
+function AppRoutes(){
+
+    const routes = useRoutes([
+        {path: '/', element: <ProductPage /> }
+    ]);
+
+    return routes;
+
+}
+
 function App(){
     return (
-        <div className="flex justify-center items-center h-screen">
-            <h1 className="text-3xl font-bold text-center">
-                Hello world!
-            </h1>
-        </div>
+        <Router>
+            <AppRoutes />
+            <Toaster position="top-center" reverseOrder={false}/>
+        </Router>
     )
 }
 
