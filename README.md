@@ -17,7 +17,7 @@ Se conecta a un **backend con NodeJS** (usando Axios) para manejar las siguiente
 - Modal para agregar un producto con validaciones en tiempo real  
 - Eliminación rápida de productos  
 - Mensajes de éxito y error con `react-hot-toast`  
-- Interfaz estética con Tailwind y soporte para modo oscuro  
+- Interfaz estética con Tailwind  
 
 ---
 
